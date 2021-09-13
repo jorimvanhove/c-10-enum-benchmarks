@@ -2,6 +2,8 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EnumBenchmarks", "EnumBenchmarks\EnumBenchmarks.csproj", "{302D5730-BB1D-46F1-8AF8-32F81E3610B3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParseTests", "ParseTests\ParseTests.csproj", "{228270B5-0F1B-4327-821F-55922FC6078C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +14,9 @@ Global
 		{302D5730-BB1D-46F1-8AF8-32F81E3610B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{302D5730-BB1D-46F1-8AF8-32F81E3610B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{302D5730-BB1D-46F1-8AF8-32F81E3610B3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{228270B5-0F1B-4327-821F-55922FC6078C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{228270B5-0F1B-4327-821F-55922FC6078C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{228270B5-0F1B-4327-821F-55922FC6078C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{228270B5-0F1B-4327-821F-55922FC6078C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
