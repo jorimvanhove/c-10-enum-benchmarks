@@ -1,11 +1,10 @@
-namespace Tests
+namespace ParseTests;
+
+public interface IEnumParseTests
 {
-    public interface IEnumParseTests
-    {
-        void ParseString();
-        void ParseStringIgnoreCaseFails();
-        void ParseInvalidStringFails();
-        void ParseNumber();
-        void ParseInvalidNumberFails();
-    }
+    void ParseString();
+    void ParseStringIgnoreCaseFails();
+    void ParseInvalidStringFails();
+    void ParseNumber();
+    void ParseInvalidNumberFails();
 }

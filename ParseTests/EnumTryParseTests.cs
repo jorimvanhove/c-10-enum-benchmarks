@@ -1,4 +1,4 @@
-namespace Tests;
+namespace ParseTests;
 
 public class EnumTryParseTests : IEnumParseTests
 {
