@@ -7,29 +7,28 @@ Intel Core i7-9750H CPU 2.60GHz, 1 CPU, 12 logical and 6 physical cores
 DefaultJob : .NET 6.0.0 (6.0.21.37719), X64 RyuJIT
 
 
-|                                         Method | value |       Mean |     Error |    StdDev |     Median | Ratio | RatioSD |
-|----------------------------------------------- |------ |-----------:|----------:|----------:|-----------:|------:|--------:|
-|                              UsingDefaultParse |   AUT |  58.459 ns | 1.5070 ns | 4.2009 ns |  57.265 ns |  1.00 |    0.00 |
-|      UsingGenericLinqGeneratedDictionaryParser |   AUT |  17.331 ns | 0.3678 ns | 0.3777 ns |  17.295 ns |  0.28 |    0.02 |
-| UsingOtherGenericLinqGeneratedDictionaryParser |   AUT |  17.725 ns | 0.2967 ns | 0.2477 ns |  17.765 ns |  0.29 |    0.02 |
-|                  UsingExplicitDictionaryParser |   AUT |  14.828 ns | 0.1847 ns | 0.1728 ns |  14.795 ns |  0.24 |    0.02 |
-|                                    UsingSwitch |   AUT |   4.886 ns | 0.1233 ns | 0.1211 ns |   4.846 ns |  0.08 |    0.01 |
-|                                                |       |            |           |           |            |       |         |
-|                              UsingDefaultParse |   BEL |  60.914 ns | 1.2416 ns | 1.6575 ns |  60.285 ns |  1.00 |    0.00 |
-|      UsingGenericLinqGeneratedDictionaryParser |   BEL |  16.683 ns | 0.2371 ns | 0.2217 ns |  16.612 ns |  0.27 |    0.01 |
-| UsingOtherGenericLinqGeneratedDictionaryParser |   BEL |  15.721 ns | 0.1390 ns | 0.1161 ns |  15.700 ns |  0.26 |    0.01 |
-|                  UsingExplicitDictionaryParser |   BEL |  15.801 ns | 0.1311 ns | 0.1095 ns |  15.778 ns |  0.26 |    0.01 |
-|                                    UsingSwitch |   BEL |   4.757 ns | 0.0550 ns | 0.0487 ns |   4.750 ns |  0.08 |    0.00 |
-|                                                |       |            |           |           |            |       |         |
-|                              UsingDefaultParse |   FIN |  93.941 ns | 1.1898 ns | 0.9936 ns |  93.757 ns |  1.00 |    0.00 |
-|      UsingGenericLinqGeneratedDictionaryParser |   FIN |  17.835 ns | 0.2377 ns | 0.2223 ns |  17.797 ns |  0.19 |    0.00 |
-| UsingOtherGenericLinqGeneratedDictionaryParser |   FIN |  15.490 ns | 0.3043 ns | 0.3125 ns |  15.405 ns |  0.17 |    0.00 |
-|                  UsingExplicitDictionaryParser |   FIN |  14.079 ns | 0.2139 ns | 0.2000 ns |  13.992 ns |  0.15 |    0.00 |
-|                                    UsingSwitch |   FIN |   4.220 ns | 0.1119 ns | 0.1289 ns |   4.158 ns |  0.05 |    0.00 |
-|                                                |       |            |           |           |            |       |         |
-|                              UsingDefaultParse |   SWE | 180.393 ns | 2.8922 ns | 2.5638 ns | 180.206 ns |  1.00 |    0.00 |
-|      UsingGenericLinqGeneratedDictionaryParser |   SWE |  16.687 ns | 0.1063 ns | 0.0887 ns |  16.703 ns |  0.09 |    0.00 |
-| UsingOtherGenericLinqGeneratedDictionaryParser |   SWE |  15.715 ns | 0.1439 ns | 0.1346 ns |  15.680 ns |  0.09 |    0.00 |
-|                  UsingExplicitDictionaryParser |   SWE |  12.739 ns | 0.0707 ns | 0.0591 ns |  12.741 ns |  0.07 |    0.00 |
-|                                    UsingSwitch |   SWE |   5.143 ns | 0.0533 ns | 0.0473 ns |   5.131 ns |  0.03 |    0.00 |
-
+|                                         Method | value |       Mean |     Error |    StdDev | Ratio | RatioSD |
+|----------------------------------------------- |------ |-----------:|----------:|----------:|------:|--------:|
+|                              UsingDefaultParse |   AUT |  60.494 ns | 1.2066 ns | 1.1287 ns | 12.29 |    0.32 |
+|      UsingGenericLinqGeneratedDictionaryParser |   AUT |  18.050 ns | 0.3417 ns | 0.3656 ns |  3.67 |    0.09 |
+| UsingOtherGenericLinqGeneratedDictionaryParser |   AUT |  18.842 ns | 0.3867 ns | 0.4137 ns |  3.82 |    0.12 |
+|                  UsingExplicitDictionaryParser |   AUT |  15.537 ns | 0.2255 ns | 0.1999 ns |  3.15 |    0.07 |
+|                                    UsingSwitch |   AUT |   4.925 ns | 0.0746 ns | 0.0697 ns |  1.00 |    0.00 |
+|                                                |       |            |           |           |       |         |
+|                              UsingDefaultParse |   BEL |  65.614 ns | 1.0476 ns | 1.5025 ns | 13.70 |    0.48 |
+|      UsingGenericLinqGeneratedDictionaryParser |   BEL |  18.106 ns | 0.3477 ns | 0.5310 ns |  3.79 |    0.10 |
+| UsingOtherGenericLinqGeneratedDictionaryParser |   BEL |  16.806 ns | 0.3006 ns | 0.2510 ns |  3.48 |    0.08 |
+|                  UsingExplicitDictionaryParser |   BEL |  16.811 ns | 0.2025 ns | 0.1795 ns |  3.47 |    0.10 |
+|                                    UsingSwitch |   BEL |   4.840 ns | 0.1240 ns | 0.1160 ns |  1.00 |    0.00 |
+|                                                |       |            |           |           |       |         |
+|                              UsingDefaultParse |   FIN |  98.763 ns | 1.9950 ns | 2.1346 ns | 23.33 |    0.71 |
+|      UsingGenericLinqGeneratedDictionaryParser |   FIN |  19.252 ns | 0.3732 ns | 0.6730 ns |  4.52 |    0.18 |
+| UsingOtherGenericLinqGeneratedDictionaryParser |   FIN |  16.821 ns | 0.3541 ns | 0.2957 ns |  3.96 |    0.08 |
+|                  UsingExplicitDictionaryParser |   FIN |  15.622 ns | 0.2459 ns | 0.2300 ns |  3.69 |    0.10 |
+|                                    UsingSwitch |   FIN |   4.237 ns | 0.0788 ns | 0.0737 ns |  1.00 |    0.00 |
+|                                                |       |            |           |           |       |         |
+|                              UsingDefaultParse |   SWE | 187.398 ns | 2.9083 ns | 2.7204 ns | 33.37 |    0.79 |
+|      UsingGenericLinqGeneratedDictionaryParser |   SWE |  17.776 ns | 0.2790 ns | 0.2610 ns |  3.17 |    0.09 |
+| UsingOtherGenericLinqGeneratedDictionaryParser |   SWE |  16.593 ns | 0.2353 ns | 0.2085 ns |  2.95 |    0.08 |
+|                  UsingExplicitDictionaryParser |   SWE |  13.943 ns | 0.2040 ns | 0.2580 ns |  2.50 |    0.07 |
+|                                    UsingSwitch |   SWE |   5.574 ns | 0.1314 ns | 0.1564 ns |  1.00 |    0.00 |
