@@ -1,5 +1,5 @@
 namespace EnumBenchmarks.Enums;
-public enum Countries
+public enum Country
 {
     AUT,
     BEL,

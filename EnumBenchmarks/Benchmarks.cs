@@ -2,14 +2,14 @@ namespace EnumBenchmarks;
 
 public class Benchmarks
 {
-    [Benchmark(Baseline = true)]
+    [Benchmark]
     [Arguments("AUT")]
     [Arguments("BEL")]
     [Arguments("FIN")]
     [Arguments("SWE")]
-    public Countries UsingDefaultParse(string value)
+    public Country UsingDefaultParse(string value)
     {
-        return Enum.Parse<Countries>(value);
+        return Enum.Parse<Country>(value);
     } 
     
     [Benchmark]
@@ -17,9 +17,9 @@ public class Benchmarks
     [Arguments("BEL")]
     [Arguments("FIN")]
     [Arguments("SWE")]
-    public Countries UsingGenericLinqGeneratedDictionaryParser(string value)
+    public Country UsingGenericLinqGeneratedDictionaryParser(string value)
     {
-        return LinqGeneratedDictionaryParser<Countries>.Parse(value);
+        return LinqGeneratedDictionaryParser<Country>.Parse(value);
     }
 
     [Benchmark]
@@ -27,9 +27,9 @@ public class Benchmarks
     [Arguments("BEL")]
     [Arguments("FIN")]
     [Arguments("SWE")]
-    public Countries UsingOtherGenericLinqGeneratedDictionaryParser(string value)
+    public Country UsingOtherGenericLinqGeneratedDictionaryParser(string value)
     {
-        return OtherLinqGeneratedDictionaryParser<Countries>.Parse(value);
+        return OtherLinqGeneratedDictionaryParser<Country>.Parse(value);
     }
     
     [Benchmark]
@@ -37,17 +37,17 @@ public class Benchmarks
     [Arguments("BEL")]
     [Arguments("FIN")]
     [Arguments("SWE")]
-    public Countries UsingExplicitDictionaryParser(string value)
+    public Country UsingExplicitDictionaryParser(string value)
     {
         return ExplicitDictionaryParser.Parse(value);
     }
 
-    [Benchmark]
+    [Benchmark(Baseline = true)]
     [Arguments("AUT")]
     [Arguments("BEL")]
     [Arguments("FIN")]
     [Arguments("SWE")]
-    public Countries UsingSwitch(string value)
+    public Country UsingSwitch(string value)
     {   
         return ExplicitSwitchParser.Parse(value);
     }

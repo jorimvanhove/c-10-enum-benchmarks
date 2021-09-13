@@ -3,7 +3,7 @@ using System.Linq;
 namespace EnumBenchmarks.Parsers;
 
 /// <summary>
-/// Copied from https://stackoverflow.com/a/34775560
+/// Copied from https://github.com/mariuszwojcik/Blog-posts-code
 /// </summary>
 /// <typeparam name="TTarget"></typeparam>
 public static class OtherLinqGeneratedDictionaryParser<TTarget>
